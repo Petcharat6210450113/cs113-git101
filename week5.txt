@@ -1,0 +1,19 @@
+week5
+local variables-ตัวแปรที่อยู่ในฟังก์ชัน
+ex.{
+    int xx = 10;
+   }
+
+global variables-ตัวแปรที่อยู่นอกฟังก์ชัน เข้าถึงฟังก์ชันต่างๆในmainได้
+ex. int xx = 10;
+    {
+        xx = input
+    }
+
+คอมไพล์แยกส่วน
+
+$ gcc -c main.c(โค้ดของโปรแกรม)       #สร้างmain.o
+$ gcc -c func.c(โค้ดของโปรแกรม)       #สร้างfunc.o
+$ gcc main.o func.o -o main.exe      #link main.c and func.o
+
+rand()-ใช้ในการสุ่มเลขจำนวนเต็ม
