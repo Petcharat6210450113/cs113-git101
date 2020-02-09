@@ -1,0 +1,24 @@
+week8
+Link List
+การเข้าถึงข้อมูลแต่ละตัว
+ข้อมูลแต่ละตัวเชื่อมโยงกันเป็นสาย
+
+Structure
+โครงสร้างข้อมูลของตัวแปรที่เก็บข้อมูลหลายเรื่องที่สัมพันธ์กัน
+ตัวแปรประเภทstructure
+ใช้ dot operator(.)
+ex. std.year = 11;
+ex. printf("%s\n", std.name);
+ex. struct student age_std = {"123456", "Tae", 19}
+
+typedef struct node{
+    int value;
+    struct node *nextnode;
+}NODDE;
+
+การลบlink listคือ ลบnodeที่อยู่ในlink lise โดยเปลี่ยนpointer
+ให้ข้ามไปnodeถัดไป
+
+
+
+
