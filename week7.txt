@@ -1,0 +1,25 @@
+week7
+Pointers-ตัวแปรที่เก็บaddress ในmemory
+int a;
+int *p;
+p = &a;
+เก็บข้อมูลไว้ที่ int a แล้วมีลูกศรจาก p ชี้ไปที่ int a
+เวลาที่เข้าถึงmemory จะเข้าผ่านในตัวp แล้วไปยังint a
+
+&(address operator) ใช้หาค่าตำแหน่งในmemory
+ex. p = &a;
+*(indirection operator) ใช้เข้าถึงข้อมูลที่ถูกอ้างอิงในmemory
+
+Pointer Arithmetic(นิพจน์)
+int a[] = {0,1,2,3,4,5,6,7,8,9};
+int *pa;
+pa = a;
+pa = pa + 2;
+printf("%d\n", pa - a);
+pa++;
+printf("%d\n", pa - a);
+
+pa = pa + 2 //เพิ่มค่า pa ขึ้นไปเป็น 2 เท่าของขนาดประเภทข้อมูลที่ pa อ้างถึง
+            //pa เพิ่มขี้นไป 8 หน่วย
+            
+
