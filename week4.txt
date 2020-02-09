@@ -1,0 +1,43 @@
+week4
+Function Definition
+เป็นการนิยามฟังก์ชัน
+ex.
+int Wed(int xx)
+ Wed = ชื่อfuntion, int xx = ชื่อตัวแปร or parameter
+
+Function Prototypes 
+คล้ายๆFunction Definition
+ex.
+int Wed(int);
+
+Function Call(Call by value)
+เป็นการส่งค่าผ่านparemeter ไปยังฟังก์ชันที่ถูกเรียก เรียกว่า"pass by value"
+ภาษาCเป็นการส่งparameter แบบ"pass by value"
+
+Standard Library 
+(printf, scanf, getchar)
+Math Library
+(sqrt, exp, log)
+
+Library ในUNIX จะเก็บอยู่ในโฟลเดอร์ /usr/lib  
+Standard C Library func เก็บอยู่ใน /usr/lib/libc.a
+Math Library func เก็บอยู่ใน /usr/lib/libm.a
+
+gcc จะlink Standrad Library Fun อัตโนมัติ
+Math Library Fun ไม่ได้Link อัตโนมัติ จะต้องระบุ -lm เพิ่มเข้าไปตอนใช้ gcc
+ใส่ #include <math.h> ก่อนเรียกใช้ Math Library Func  
+
+Return Value ใช้ return เพื่อส่งกลับข้อมูล
+ex. #include <stdio.h>
+    int Wed(int xx){
+        if(xx % 10 == 0);
+           return 1;
+        else;
+           return 0;  //ถ้าโปรแกรมทำงานแล้วเจอคำสั่ง return โปรแกรมจะกลับไปทำงานจ่อจากจุดที่ฟังก์ชันนั้นถูกเรียก
+    }
+    
+Fibonacci = อนุกรมที่เลขสองจำนวนแรกมีค่าเป็น1 แล้วเลขถัดไปมีค่าเป็นผลรวมของสองจำนวนก่อนหน้า
+-1, 1, 2, 3, 5, 8, ...
+
+Stack Frames = เพื่อเก็บตัวแปร parameter และตัวแปร local ที่มีจำนวนมาก
+-โปรแกรมทำงานเสร็จ คือถ้าเจอreturn stack frame จะถูกทำลาย
