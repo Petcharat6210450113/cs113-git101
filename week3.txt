@@ -1,0 +1,29 @@
+week3
+-statement จะมี ; ปิดท้าย
+-โค้ดที่ช่วงใน{...} เรียกว่า block
+
+If-Else, Else-if
+ex. if (expression1)เงื่อนไขที่1
+        statement1
+    else if (expression2)เงื่อนไขที่2
+        statement2
+    elseนอกเหนือจากเงื่อนไข
+        statement2
+
+While and For
+-ในLoop whileถ้าเงื่อนไขเป็นจริงจะทำงาน และวนจนกว่าเงื่อนไขจะเป็นเท็จ
+-Forทำงานคล้ายๆwhile แต่รูปแบบต่างกัน
+ for (1; 2; 3);
+ for (i=0; i<= 20; i++);
+ 1 and 3 เป็นการกำหนดค่า
+ 2 เป็นการเปรียนเทียบค่า
+
+break เป็นการทำให้โปรแกรมหยุดทำงานจากloop
+continue เป็นการทำให้loopวนซ้ำขึ้นมาใหม่ ถ้าเป็นwhileจะกลับไปทดสอบเงื่อนไข ส่วนforจะไปทำงานตรงincrement or decrement
+
+
+
+
+
+
+
